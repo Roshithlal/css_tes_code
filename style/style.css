@@ -1,0 +1,105 @@
+/* Button */
+div.download-button{
+	width: 150px;
+  position: relative;
+	border: 2px solid #72b4c3;  
+  border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	box-shadow: 0 0 0px 8px #95dbe7;
+	margin:20px;
+	padding: 10px 20px;
+	color: #72b4c3;
+  display: flex;
+  align-items: center;
+}
+div.download-button::after{
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  right: -15px;
+  bottom: -15px;
+  z-index: -1;
+  border:2px solid #6ea9b4;
+  border-top-left-radius: 28px;
+  border-bottom-right-radius: 28px;
+}
+.download-icon{
+  width:30px;
+  height: 30px;
+}
+.button-text{
+  margin-left: 14px;
+  font-weight: bold;
+}
+
+/* chat box */
+
+.chat-box{
+  width: 25%;
+  border: 2px solid #a6b2b066;
+  position: relative;
+  border-radius: 7px;
+}
+.response{
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.response:nth-child(even) .datetime{
+  top: -20px;
+  left: 0;
+}
+.response:nth-child(even) img {
+  position: absolute;
+  right: 0;
+  top: -20px;
+}
+.response:nth-child(even) .message{
+  width: 90%;
+  margin-left: 0;
+}
+.datetime{
+  position: absolute;
+  top: 0;
+  left: 30px;
+  font-size: small;
+}
+.message{
+  margin-left: 30px;
+}
+.chat-input input:focus{
+  background-color: #696969;
+  color: #000000;
+}
+.chat-input input{
+  width: 100%;
+  height: 30px;
+  border: 1px solid #a6b2b066;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+.chat-input{
+  width: 99%;
+  position: absolute;
+  bottom: 0;
+}
+.chat-response-container{
+  padding: 10px;
+}
+
+
+/*Animation */
+
+.sun-container{
+  position: relative;
+  height: 400px;
+  width: 400px;
+}
+.ball {
+  background: #2db34a;
+  border-top-right-radius: 130px;
+  position: absolute;
+  bottom: 168px;
+  left: 13px;
+}
